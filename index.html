@@ -85,17 +85,14 @@ window.onload = function() {
         alert('Шрифты не найдены или API не вернул список.');
         return;
       }
-
       let index = 0;
-
-      // Переключение шрифтов каждые 3 секунды
       setInterval(() => {
         header.style.fontFamily = fonts[index];
         index = (index + 1) % fonts.length; // зацикливаем
-      }, 3000);
+      }, 150);
     } catch (error) {
-      console.error('Ошибка при получении шрифтов:', error);
-      alert('Не удалось получить шрифты. Возможно, требуется разрешение или API недоступен.');
+      console.error('Error:', error);
+      //alert('Не удалось получить шрифты. Возможно, требуется разрешение или API недоступен.');
     }
   });
 </script>
