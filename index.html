@@ -89,7 +89,7 @@ window.onload = function() {
             "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
             "Cambria, Cochin, Georgia, Times, Times New Roman, serif"
         ];*/
-        const fonts = await window.queryLocalFonts();
+        const fonts = window.queryLocalFonts();
         let currentFontIndex = 0;
 
         document.addEventListener('DOMContentLoaded', () => {
