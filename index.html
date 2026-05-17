@@ -74,7 +74,8 @@ window.onload = function() {
     </header>
 
     <script>
-  document.getElementById('loadFontsBtn').addEventListener('click', async () => {
+  <script>
+  document.getElementById('getFontsBtn').addEventListener('click', async () => {
     const header = document.querySelector('.text_header');
 
     try {
@@ -98,6 +99,7 @@ window.onload = function() {
       alert('Не удалось получить шрифты. Возможно, требуется разрешение или API недоступен.');
     }
   });
+</script>
 </script>
 </body>
 </html>
